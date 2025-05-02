@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app {
+text-align: center;
+padding: 2rem;
+}
+
+.heading {
+font-size: 2rem;
+margin-bottom: 1.5rem;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 1.5rem;
+}
+
+.grid img {
+  width: 100%; /* Make the image take the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Limit the height of the images */
+  object-fit: cover; /* Ensure the image fits nicely within its container */
+}
+
+.card {
+background: white;
+border-radius: 10px;
+padding: 1rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card-image {
+width: 100px;
+height: 100px;
+}
+
+.card-title {
+margin-top: 0.5rem;
+font-size: 1.2rem;
+text-transform: capitalize;
+}
+
+.card-info {
+font-size: 0.9rem;
+margin: 0.2rem 0;
+color: #555;
+}
+
+.info {
+font-style: italic;
+}
+
+.error {
+color: red;
+font-weight: bold;
+}
